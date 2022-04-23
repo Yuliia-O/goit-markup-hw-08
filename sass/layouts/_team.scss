@@ -1,0 +1,37 @@
+.team {
+    background-color: var(--light-background);
+    --card-item: 4;
+}
+
+.team-list-item {
+    background-color: var(--team-cards-background-color);
+    box-shadow: var(--team-member-card-shadow);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-pic {
+    margin-bottom: 30px;
+}
+
+.team-member-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--titles-font-color);
+}
+
+.team-member-position {
+    margin-bottom: 16px;
+}
+
+.team-member-name,
+.team-member-position {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.member-description {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+}

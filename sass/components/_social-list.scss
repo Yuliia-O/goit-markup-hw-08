@@ -1,0 +1,38 @@
+.social-contacts {
+    display: flex;
+    max-width: 206px;
+    align-items: center;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: var(--social-icons);
+    transition: background-color 250ms var(--trans-time-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.social-icon {
+    fill: var(--social-icons);
+
+    transition: fill 250ms var(--trans-time-function);
+
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: var(--social-icons-hover-light);
+    }
+}
+

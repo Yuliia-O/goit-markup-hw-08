@@ -1,0 +1,32 @@
+.features {
+    padding-bottom: 47px;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--light-background);
+    border-radius: 4px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+}
+
+.features-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--titles-font-color);
+}
+
+.features-list {
+    --card-item: 4;
+}

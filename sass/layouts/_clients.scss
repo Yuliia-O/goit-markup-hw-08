@@ -1,0 +1,31 @@
+.clients-list {
+    --card-item: 6;
+    align-items: center;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid var(--client-icons);
+    border-radius: 4px;
+
+    transition: border-color 250ms var(--trans-time-function);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.clients-logo {
+    fill: var(--client-icons);
+
+    transition: fill 250ms var(--trans-time-function);
+
+    .clients-link:hover &,
+    .clients-link:focus & {
+        fill: var(--accent-color);
+    }
+}

@@ -1,0 +1,99 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--dark-background);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address-wrapper {
+    margin-right: 70px;
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-address {
+    font-style: inherit;
+}
+
+.footer-address-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-link {
+    color: var(--font-color-dark-background-opacity);
+
+    transition: color 250ms var(--trans-time-function);
+
+    &[target='_blank'] {
+        color: var(--font-color-dark-background);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer-title {
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: var(--font-color-dark-background);
+}
+
+.footer .social-link {
+    color: var(--social-icons-hover-light);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+.subscribe-wrapper {
+    margin-left: auto;
+}
+
+.subscribe-form-input {
+    padding: 15px 16px;
+    min-width: 358px;
+    margin-right: 12px;
+    color: var(--font-color-dark-background);
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    /* i don't know what the below property does, but it was in figma */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer .order-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 30px;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+        background-color: var(--order-button-hover-color);
+    }
+}
+
+.icon-send {
+    margin-left: 10px;
+    fill: var(--font-color-dark-background);
+}

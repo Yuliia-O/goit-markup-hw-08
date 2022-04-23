@@ -1,0 +1,30 @@
+:root {
+    --primaty-font-famaly: Roboto, sans-serif;
+    --logo-font-family: Raleway, sans-serif;
+    --accent-color: #2196f3;
+    --primary-font-color: #757575;
+    --titles-font-color: #212121;
+    --font-color-dark-background: #ffffff;
+    --font-color-dark-background-opacity: rgba(255, 255, 255, 0.6);
+    --base-logo-color: #000000;
+    --dark-background: #2f303a;
+    --light-background: #f5f4fa;
+    --order-button-hover-color: #188ce8;
+    --portfolio-stroke-color: #eeeeee;
+    --team-cards-background-color: #ffffff;
+    --header-underline-color: #ececec;
+    --team-member-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    --card-item: 3;
+    --card-gap: 30px;
+
+    --social-icons: #afb1b8;
+    --client-icons: #afb1b8;
+    --social-icons-hover-light: #ffffff;
+
+    --portfolio-card-hover-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    --trans-time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
