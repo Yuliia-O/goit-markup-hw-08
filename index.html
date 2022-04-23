@@ -27,6 +27,11 @@
                     <li class="navigation__item"><a class="navigation__link link" href="">Контакты</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-icon" width="40" height="40">
+                    <use href="./images/icons/icons.svg#mobile-menu-icon"></use>
+                </svg>
+            </button>
             <ul class="contact-list list">
                 <li class="contact-list__item"><a class="contact-list__link link" href="mailto:info@devstudio.com">
                     <svg class="contact-list__icon-envelope" width="16" height="12">
@@ -41,23 +46,52 @@
                     +38 096 111 11 11</a></li>
             </ul>
         </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__btn-close" data-menu-close>
+                    <svg class="mobile-menu__btn-close-icon" width="40" height="40">
+                        <use href="./images/icons/icons.svg#mobile-menu-close-icon"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-nav list">
+                    <li class="mobile-nav__item"><a href="" class="mobile-nav__link link ">Студия</a></li>
+                    <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Портфолио</a></li>
+                    <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+                </ul>
+                
+                <ul class="mobile-contacts list">
+                    <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link link">+38 096 111 11
+                            11</a></li>
+                    <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com"
+                            class="mobile-contacts__link link">info@devstudio.com</a></li>
+                </ul>
+                
+                <ul class="mobile-social list">
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link link">Instagram</a></li>
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link link">Twitter</a></li>
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link link">Facebook</a></li>
+                    <li class="mobile-social__item"><a href="" class="mobile-social__link link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <!--Main content-->
     <main>
         <!--Hero-->
         
-        <section class="hero overlay">
+        <!-- <section class="hero overlay">
             <div class="hero__container container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="order-btn" data-modal-open type="button">Заказать услугу</button>
             </div>
             
-        </section>
+        </section> -->
         
 
         <!--Features-->
-        <section class="features section">
+        <!-- <section class="features section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="features-list list card-set">
@@ -102,10 +136,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Services-->
-        <section class="services section">
+        <!-- <section class="services section">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="services-list list card-set">
@@ -129,10 +163,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Team-->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list card-set">
@@ -286,10 +320,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Clients-->
-        <section class="clients section">
+        <!-- <section class="clients section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="clients-list list card-set">
@@ -338,11 +372,11 @@
                     </li>             
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="address-wrapper">
                 <a class="logo link" aria-label="Логотип сайта" href="./index.html" lang="en">Web<span
@@ -404,7 +438,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -452,5 +486,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
