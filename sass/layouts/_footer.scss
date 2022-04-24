@@ -4,15 +4,6 @@
     background-color: var(--dark-background);
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
-.address-wrapper {
-    margin-right: 70px;
-}
-
 .footer .logo {
     display: block;
     margin-bottom: 20px;
@@ -23,7 +14,7 @@
 }
 
 .footer-address-list-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .address-link {
@@ -43,7 +34,7 @@
 
 .footer-title {
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 20px;
 
@@ -64,14 +55,10 @@
     fill: currentColor;
 }
 
-.subscribe-wrapper {
-    margin-left: auto;
-}
-
 .subscribe-form-input {
     padding: 15px 16px;
-    min-width: 358px;
-    margin-right: 12px;
+    width: 100%;
+    margin-bottom: 20px;
     color: var(--font-color-dark-background);
 
     background-color: transparent;
@@ -82,10 +69,11 @@
 }
 
 .footer .order-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     padding: 10px 30px;
     text-align: center;
+    margin: 0 auto;
 
     &:hover,
     &:focus {
@@ -96,4 +84,64 @@
 .icon-send {
     margin-left: 10px;
     fill: var(--font-color-dark-background);
+}
+
+@include mq(no-desktop) {
+    .address-wrapper {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .join-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    } 
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .subscribe-wrapper {
+        text-align: center;
+    }
+}
+
+@include mq(mobile) {
+    .subscribe-form-input {
+        width: 450px;
+    }
+}
+
+@include mq(tablet) {
+    .address-join-wrapepr {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+
+@include mq(desktop) {
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .address-wrapper {
+        margin-right: 70px;
+    }
+
+    .subscribe-wrapper {
+        margin-left: auto;
+    }
+
+    .footer .order-btn {
+        display: inline-flex;
+    }
+
+    .subscribe-form-input {
+        width: 358px;
+        margin-right: 12px;
+    }
 }

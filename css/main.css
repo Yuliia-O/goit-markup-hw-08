@@ -938,15 +938,6 @@ img {
   background-color: var(--dark-background);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.address-wrapper {
-  margin-right: 70px;
-}
-
 .footer .logo {
   display: block;
   margin-bottom: 20px;
@@ -957,7 +948,7 @@ img {
 }
 
 .footer-address-list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-link {
@@ -975,7 +966,7 @@ img {
 
 .footer-title {
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--font-color-dark-background);
@@ -994,14 +985,10 @@ img {
   fill: currentColor;
 }
 
-.subscribe-wrapper {
-  margin-left: auto;
-}
-
 .subscribe-form-input {
   padding: 15px 16px;
-  min-width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  margin-bottom: 20px;
   color: var(--font-color-dark-background);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1011,10 +998,11 @@ img {
 }
 
 .footer .order-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding: 10px 30px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .footer .order-btn:hover, .footer .order-btn:focus {
@@ -1024,6 +1012,59 @@ img {
 .icon-send {
   margin-left: 10px;
   fill: var(--font-color-dark-background);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .address-wrapper {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .join-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .footer-title {
+    text-align: center;
+  }
+  .subscribe-wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-join-wrapepr {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .address-wrapper {
+    margin-right: 70px;
+  }
+  .subscribe-wrapper {
+    margin-left: auto;
+  }
+  .footer .order-btn {
+    display: inline-flex;
+  }
+  .subscribe-form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .projects-filter {
