@@ -108,19 +108,6 @@ img {
   }
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(var(--card-gap) * -1);
-  margin-top: calc(var(--card-gap) * -1);
-}
-
-.card-set-item {
-  flex-basis: calc(100% / var(--card-item) - var(--card-gap));
-  margin-left: var(--card-gap);
-  margin-top: var(--card-gap);
-}
-
 .order-btn {
   padding: 10px 32px;
   border: none;
@@ -696,7 +683,19 @@ img {
 }
 
 .features {
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+}
+
+.features-list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .icon-box {
@@ -704,27 +703,55 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 25px 100px;
-  margin-bottom: 30px;
+  padding: 25px 0;
   background-color: var(--light-background);
   border-radius: 4px;
-}
-
-.icon {
-  width: 70px;
-  height: 70px;
+  margin-bottom: 30px;
 }
 
 .features-title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   color: var(--titles-font-color);
 }
 
-.features-list {
-  --card-item: 4;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .features-list {
+    --card-item: 2;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--card-gap) * -1);
+    margin-top: calc(var(--card-gap) * -1);
+  }
+  .features-list-item {
+    flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
+  }
+  .features-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    --card-item: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--card-gap) * -1);
+    margin-top: calc(var(--card-gap) * -1);
+  }
+  .features-list-item {
+    flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
+  }
+  .features-title {
+    text-align: left;
+  }
 }
 
 .services {
