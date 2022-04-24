@@ -755,25 +755,41 @@ img {
 }
 
 .services {
-  padding-top: 47px;
+  display: none;
 }
 
-.service-img-wrapper {
-  position: relative;
-}
-
-.service-img-text {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  bottom: 0px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  color: var(--font-color-dark-background);
-  background-color: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+    padding-top: 47px;
+  }
+  .service-img-wrapper {
+    position: relative;
+  }
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--card-gap) * -1);
+    margin-top: calc(var(--card-gap) * -1);
+  }
+  .services-list-item {
+    flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
+  }
+  .service-img-text {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: var(--font-color-dark-background);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .team {

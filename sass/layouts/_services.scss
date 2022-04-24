@@ -1,22 +1,38 @@
 .services {
-    padding-top: 47px;
+    display: none;
 }
 
-.service-img-wrapper {
-    position: relative;
-}
+@include mq(desktop) {
 
-.service-img-text {
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    bottom: 0px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    .services {
+        display: block;
+        padding-top: 47px;
+    }
 
-    color: var(--font-color-dark-background);
-    background-color: rgba(47, 48, 58, 0.8);
+    .service-img-wrapper {
+        position: relative;
+    }
+
+    .services-list {
+        @include card-set;
+    }
+
+    .services-list-item {
+        @include card-set-item;
+    }
+
+    .service-img-text {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        color: var(--font-color-dark-background);
+        background-color: rgba(47, 48, 58, 0.8);
+    }
 }
