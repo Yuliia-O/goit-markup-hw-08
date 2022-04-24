@@ -107,7 +107,7 @@
                 content: '';
                 position: absolute;
                 left: 0px;
-                bottom: -1px;
+                bottom: -2px;
                 width: 100%;
                 height: 4px;
                 background-color: var(--accent-color);
@@ -124,5 +124,9 @@
         &__item:not(:last-child) {
             margin-right: 30px;
         }
+    }
+
+    .navigation__link.current::after {
+        bottom: -1px;
     }
 }
