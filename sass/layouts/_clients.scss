@@ -1,13 +1,9 @@
-.clients-list {
-    --card-item: 6;
-    align-items: center;
-}
-
 .clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border: 1px solid var(--client-icons);
     border-radius: 4px;
 
@@ -27,5 +23,38 @@
     .clients-link:hover &,
     .clients-link:focus & {
         fill: var(--accent-color);
+    }
+}
+
+@include mq(mobile-only) {
+    .clients-list {
+        --card-item: 2;
+        @include card-set;
+    }
+    .clients-item {
+        @include card-set-item;
+    }
+}
+
+@include mq(tablet) {
+    .clients-list {
+        --card-item: 3;
+        @include card-set;
+    }
+    .clients-item {
+        @include card-set-item;
+    }
+}
+
+@include mq(desktop) {
+    .clients-list {
+        --card-item: 6;
+    }
+}
+
+@include mq(no-desktop) {
+    .clients.section {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
