@@ -1,6 +1,9 @@
 .team {
     background-color: var(--light-background);
-    --card-item: 4;
+
+    &.section {
+        padding-bottom: 60px;
+    }
 }
 
 .team-list-item {
@@ -31,7 +34,35 @@
 }
 
 .member-description {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+@include mq(mobile-only) {
+    .team-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@include mq(tablet) {
+    .team-list {
+        --card-item: 2;
+        @include card-set;
+    }
+    
+    .team-list-item {
+        @include card-set-item;
+    }
+}
+
+@include mq(desktop) {
+    .team-list {
+        --card-item: 4;
+    }
+
+    .team.section{
+        padding-bottom: 94px;
+    }
 }
