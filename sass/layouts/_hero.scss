@@ -30,20 +30,20 @@
 
     @include mq(retina) {
         &.overlay {
-            background-image: 
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../../images/hero/hero-m@2x.jpg);
         }
     }
 
     @media screen and (min-width: 481px) {
         &.overlay {
-            background-image:
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../../images/hero/hero-t.jpg);
         }   
 
         @include mq(retina) {
             &.overlay {
-                background-image:
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../../images/hero/hero-t@2x.jpg);
             }
         }
@@ -52,13 +52,13 @@
     @media screen and (min-width: 769px) {
         &.overlay {
             max-width: 1600px;
-            background-image:
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../../images/hero/bg.jpg);
         }
 
         @include mq(retina) {
             &.overlay {
-            background-image:
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../../images/hero/hero-d@2x.jpg);
             }
         }
