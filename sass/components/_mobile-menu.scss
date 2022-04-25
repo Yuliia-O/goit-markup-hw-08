@@ -10,6 +10,7 @@
     height: 100vh;
     overflow: auto;
     background-color: #fff;
+    z-index: 100;
 
     transition: opacity 150ms linear, visibility 150ms linear;
 }
