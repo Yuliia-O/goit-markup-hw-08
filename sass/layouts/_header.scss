@@ -15,10 +15,6 @@
 .header {
     position: relative;
     border-bottom: 1px solid var(--header-underline-color);
-
-    .logo {
-        margin-right: 88px;
-    }
 }
 
 .mobile-menu-btn {
@@ -34,6 +30,10 @@
 }
 
 @include mq(tablet) {
+
+    .header .logo {
+        margin-right: 88px;
+    }
 
     .contact-list {
         display: block;
@@ -118,6 +118,11 @@
 }
 
 @include mq(desktop) {
+
+    .header .logo {
+        margin-right: 93px;
+    }
+    
     .contact-list {
         display: flex;
 

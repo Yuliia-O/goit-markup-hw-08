@@ -513,10 +513,6 @@ img {
   border-bottom: 1px solid var(--header-underline-color);
 }
 
-.header .logo {
-  margin-right: 88px;
-}
-
 .mobile-menu-btn {
   background-color: transparent;
   border: none;
@@ -530,6 +526,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 88px;
+  }
   .contact-list {
     display: block;
     padding: 16px 0;
@@ -595,6 +594,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 93px;
+  }
   .contact-list {
     display: flex;
   }
