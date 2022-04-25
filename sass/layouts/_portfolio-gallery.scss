@@ -39,13 +39,16 @@
 }
 
 .card-description {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid var(--portfolio-stroke-color);
     border-top: transparent;
 }
 
 .projects-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     transition: box-shadow 250ms var(--trans-time-function);
 
