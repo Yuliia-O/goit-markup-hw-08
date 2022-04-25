@@ -29,6 +29,13 @@
     }
 }
 
+@include mq(mobile-only) {
+    .header__container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
 @include mq(tablet) {
 
     .header .logo {
