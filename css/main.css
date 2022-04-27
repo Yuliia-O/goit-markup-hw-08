@@ -207,7 +207,6 @@ img {
   top: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
   transition: opacity 300ms ease, visibility 300ms ease;
 }
 
