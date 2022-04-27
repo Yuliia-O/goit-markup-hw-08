@@ -20,8 +20,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    min-height: 581px;
+    width: 100%;
+    max-width: 450px;
+    min-height: 609px;
     padding: 40px;
     background-color: var(--team-cards-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -62,7 +63,7 @@
 .modal-action-text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     margin-bottom: 12px;
 
@@ -134,8 +135,8 @@
     }
 
     &::placeholder {
-        font-size: 12px;
-        line-height: 1.17;
+        font-size: 14px;
+        line-height: 1.14;
         letter-spacing: 0.01em;
     
         color: rgba(117, 117, 117, 0.5);
@@ -196,6 +197,29 @@
     &:focus,
     &:hover {
         background-color: var(--order-button-hover-color);
+    }
+}
+
+@include mq(no-desktop) {
+    .accept-policy-label {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+}
+
+@include mq(desktop) {
+    .modal {
+        max-width: 528px;
+        min-height: 581px;
+    }
+
+    .modal-action-text {
+        line-height: 1.15;
+    }
+
+    .modal-input-msg::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
     }
 }
 
