@@ -83,6 +83,10 @@ img {
   font-style: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -358,6 +362,7 @@ img {
   border: 2px solid var(--titles-font-color);
   border-radius: 2px;
   cursor: pointer;
+  flex-shrink: 0;
   transition: background-color 250ms var(--trans-time-function), border-color 250ms var(--trans-time-function), background-image 250ms var(--trans-time-function);
 }
 
