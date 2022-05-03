@@ -137,6 +137,12 @@
             margin-right: 30px;
         }
     }
+    
+    .contact-list__link {
+        font-size: 14px;
+        line-height: 1.14;
+
+    }
 
     .navigation__link.current::after {
         bottom: -1px;

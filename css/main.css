@@ -640,6 +640,10 @@ img {
   .contact-list__item:not(:last-child) {
     margin-right: 30px;
   }
+  .contact-list__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
   .navigation__link.current::after {
     bottom: -1px;
   }
@@ -1053,16 +1057,23 @@ img {
   fill: var(--font-color-dark-background);
 }
 
+@media screen and (max-width: 767.98px) {
+  .address-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 1199.98px) {
+  .address-join-wrapepr {
+    margin-bottom: 60px;
+  }
   .address-wrapper {
     text-align: center;
-    margin-bottom: 60px;
   }
   .join-us-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
   }
   .subscribe-wrapper {
     text-align: center;
