@@ -428,9 +428,11 @@ img {
 
 .mobile-menu__container {
   position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .mobile-menu__btn-close {
@@ -454,7 +456,6 @@ img {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-bottom: 302px;
   color: var(--titles-font-color);
 }
 
@@ -465,6 +466,10 @@ img {
 .mobile-nav__link:hover,
 .mobile-nav__link:focus {
   color: var(--accent-color);
+}
+
+.mobile-contacts-wrapper {
+  margin-top: auto;
 }
 
 .mobile-contacts {
@@ -485,7 +490,7 @@ img {
 
 .mobile-contacts__link[href="mailto:info@devstudio.com"] {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-font-color);
@@ -494,6 +499,7 @@ img {
 .mobile-social {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -502,11 +508,7 @@ img {
 }
 
 .mobile-social__item {
-  padding: 0 10px;
-}
-
-.mobile-social__item:first-child {
-  padding-left: 0;
+  padding-right: 10px;
 }
 
 .mobile-social__item:last-child {
