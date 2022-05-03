@@ -1121,8 +1121,8 @@ img {
   margin-bottom: 40px;
 }
 
-.projects-filter-item:not(:last-child) {
-  margin-right: 8px;
+.projects-filter-item {
+  margin-left: 8px;
 }
 
 .filter-btn {
@@ -1214,6 +1214,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .projects-filter {
     margin-top: -15px;
+    margin-left: -8px;
   }
   .projects-filter-item {
     margin-top: 15px;
